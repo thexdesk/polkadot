@@ -47,4 +47,3 @@ EXPOSE 30333 9933 9944
 VOLUME ["/polkadot"]
 
 ENTRYPOINT ["/usr/bin/polkadot"]
-
