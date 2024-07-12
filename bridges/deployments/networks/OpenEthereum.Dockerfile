@@ -1,4 +1,4 @@
-FROM ubuntu:xenial AS builder
+FROM ubuntu:xenial-20210416 AS builder
 
 # show backtraces
 ENV RUST_BACKTRACE 1
@@ -60,7 +60,7 @@ WORKDIR /openethereum
 RUN cargo build --release --verbose
 RUN strip ./target/release/openethereum
 
-FROM ubuntu:xenial
+FROM ubuntu:xenial-20210416
 
 # show backtraces
 ENV RUST_BACKTRACE 1
